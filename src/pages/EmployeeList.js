@@ -1,43 +1,34 @@
 import React, { useState, useEffect } from "react";
 import Cards from "../components/Cards";
-import API from "../utils/API"
-
-
+import API from "../utils/API";
 
 function EmployeeList() {
-    const [employee, setEmployee] = useState({
-        
-    });
+    const [employee, setEmployee] = useState([]);
 
-    // useEffect(() => {
-    //     const data = API.search()
-    //     console.log(data)
-    //     setEmployee(
-    //     data
-    //     )
-    // }, []);
+    useEffect(() => {getEmployee()}, [])
 
     const getEmployee = () => {
-        const data = API.search();
-        console.log(data);
-        setEmployee(data);
+        API.search()
+            .then((res) => {
+                console.log(res, "results from axios");
+                setEmployee(res.data.results);
+                console.log(employee, "is this in there")
+            })
     }
 
-    getEmployee();
+    
 
-console.log(employee, "use state variable");
-
-    {
-        employee.map((element) => {
-
-            return (
-                <Cards
-                    image={element.data.results.picture.medium}
-                    name={element.data.results.name.first}
-                    lastName={element.data.results.name.last} />
-            )
-        })
-    }
+    return (
+        <div className="container">
+            {
+                employee.map((employees) =>
+                    <Cards image={employees.picture.large}
+                        name={employees.name.first}
+                        lastName={employees.name.last} />
+                )
+            }
+        </div>
+    )
 };
 
 export default EmployeeList;
