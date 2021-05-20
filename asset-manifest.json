@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/ThisIsPersonnel/static/css/main.82483a68.chunk.css",
+    "main.js": "/ThisIsPersonnel/static/js/main.73902f68.chunk.js",
+    "main.js.map": "/ThisIsPersonnel/static/js/main.73902f68.chunk.js.map",
+    "runtime-main.js": "/ThisIsPersonnel/static/js/runtime-main.acfe3c95.js",
+    "runtime-main.js.map": "/ThisIsPersonnel/static/js/runtime-main.acfe3c95.js.map",
+    "static/css/2.4c97ca4f.chunk.css": "/ThisIsPersonnel/static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.2e3d5888.chunk.js": "/ThisIsPersonnel/static/js/2.2e3d5888.chunk.js",
+    "static/js/2.2e3d5888.chunk.js.map": "/ThisIsPersonnel/static/js/2.2e3d5888.chunk.js.map",
+    "index.html": "/ThisIsPersonnel/index.html",
+    "static/css/2.4c97ca4f.chunk.css.map": "/ThisIsPersonnel/static/css/2.4c97ca4f.chunk.css.map",
+    "static/css/main.82483a68.chunk.css.map": "/ThisIsPersonnel/static/css/main.82483a68.chunk.css.map",
+    "static/js/2.2e3d5888.chunk.js.LICENSE.txt": "/ThisIsPersonnel/static/js/2.2e3d5888.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.acfe3c95.js",
+    "static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.2e3d5888.chunk.js",
+    "static/css/main.82483a68.chunk.css",
+    "static/js/main.73902f68.chunk.js"
+  ]
+}
