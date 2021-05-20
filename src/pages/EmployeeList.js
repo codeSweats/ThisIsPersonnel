@@ -24,7 +24,9 @@ function EmployeeList() {
                 employee.map((employees) =>
                     <Cards image={employees.picture.large}
                         name={employees.name.first}
-                        lastName={employees.name.last} />
+                        lastName={employees.name.last}
+                        phone={employees.phone}
+                        email={employees.email} />
                 )
             }
         </div>
