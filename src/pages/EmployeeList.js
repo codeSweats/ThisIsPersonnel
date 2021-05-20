@@ -5,7 +5,7 @@ import API from "../utils/API";
 function EmployeeList() {
     const [employee, setEmployee] = useState([]);
 
-    useEffect(() => {getEmployee()}, [])
+    useEffect(() => {getEmployee()}, []);
 
     const getEmployee = () => {
         API.search()
